@@ -78,9 +78,9 @@ button.addEventListener("click", () => {
 
             if (volumeSelect.length >= 4) {
                 // reset all to 0
+                audio.volume = Math.min(1, volSum / 100)
                 volumeSelect = [];
                 volSum = 0;
-                audio.volume = 0.5;
                 button.textContent = `volume: ${volSum}`;
 
                 // set other elemnts back to white 
@@ -98,7 +98,7 @@ button.addEventListener("click", () => {
 
             // audio.volume must be within 0..1, so clamp the sum
             volSum = volumeSelect.reduce((a, b) => a + b, 0);
-            audio.volume = Math.min(1, volSum / 100);
+            //audio.volume = Math.min(1, volSum / 100);
             button.textContent = `volume: ${volSum}`;
         });
 

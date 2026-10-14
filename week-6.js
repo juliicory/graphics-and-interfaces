@@ -63,7 +63,7 @@ button.addEventListener("click", () => {
     volumeOptions = [];
 
     // create volume texts
-    for (let j = 0; j < 20; j++) {
+    for (let j = 0; j < 10; j++) {
 
         let i = parseInt(Math.random() * 100);
 

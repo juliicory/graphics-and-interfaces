@@ -5,6 +5,7 @@
     const WEEKS = [
         { label: "Week 1", file: "week-1.js" },
         { label: "Week 2", file: "week-2.js" },
+        { label: "Week 6", file: "week-6.js" }
     ];
     const STORAGE_KEY = "selectedWeek";
     const DEFAULT_WEEK = WEEKS[WEEKS.length - 1].file;
